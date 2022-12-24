@@ -47,5 +47,5 @@ create table Teachers(
 	constraint CK_Teachers_Surname        check([Surname] <> ''),
 	constraint CK_Teachers_Salary         check([Salary] > 0),
 	constraint CK_Teachers_Premium        check([Premium] >= 0),
-	constraint CK_Teachers_EmploymentDate check([EmploymentDate] > '01.01.1990')
+	constraint CK_Teachers_EmploymentDate check([EmploymentDate] > '1990-01-01')
 );
