@@ -19,7 +19,7 @@ go
 
 create table [GoodsTypes](
 	[ID] int not null identity(1,1),
-	[Name] nvarchar(max) not null,
+	[Name] nvarchar(150) not null unique,
 
 	constraint PK_GoodsTypes_ID primary key([ID]),
 	constraint CK_GoodsTypes_Name check([Name] <> ''),
