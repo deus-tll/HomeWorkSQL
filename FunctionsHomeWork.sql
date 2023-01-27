@@ -175,33 +175,27 @@
 
 
 --4.)
---alter function GetDateWithMaxTotalAmount()
+--create function GetDateWithMaxTotalAmount()
 --returns date
 --as
 --begin
 --	declare @result date = null;
+--	declare @table table([Date] date, [Sum] money);
+
+--	insert into @table
 --	select
---		@result = DS.[Date]
---	from
---		(select
 --			S.[Date],
---			Sum(S.[SellingPrice]) as 'Sum'
---		 from
---			[Sales] as S
---		 group by
---			S.[Date]) as DS,
---		(select 
---			Max(DS.[Sum]) as 'MaxSum'
+--			Sum(S.[SellingPrice]) as [Sum]
 --		from
---			(select
---				S.[Date],
---				Sum(S.[SellingPrice]) as 'Sum'
---			from
---				[Sales] as S
---			group by
---				S.[Date]) as DS) as M
---	where
---		DS.[Sum] = M.MaxSum
+--			[Sales] as S
+--		group by
+--			S.[Date]
+--		order by [Sum] desc;
+		
+--	select top 1
+--		@result = t.[Date]
+--	from
+--		@table as t
 
 --	return @result
 --end
