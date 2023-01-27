@@ -91,20 +91,6 @@
 
 --task 2
 
---insert into Employees([Name], [Surname], [Patronymic] ) values('Miller', 'Ivan', 'Anatoliyovich')
---insert into Employees([Name], [Surname], [Patronymic] ) values('Miller', 'Artem', 'Valeriyovich'),
---('Khamedova', 'Anastasiya', 'Sergiivna'), ('Kostylev', 'Aleksandr', 'Aleksiyovich')
-
---insert into Customers([Name], [Surname], [Patronymic], [Email] ) values('Nabiylin', 'Vladislav', 'Ivanovich', 'dhcuisisdbc@icos.com')
---insert into Customers([Name], [Surname], [Patronymic], [Email] ) values('Drobot', 'Max', 'Stepanovich', 'cjahjkdbc@uyos.com')
---insert into Customers([Name], [Surname], [Patronymic], [Email] ) values('Kostylev', 'Valentina', 'Aleksiivna', 'axzkjchk@plos.com')
-
---insert into Sales values('sport shoes', 1000, 1, '2022-10-15', 1, 4)
---insert into Sales values('sport suit', 5429, 2, '2023-01-15', 1, 5)
---insert into Sales values('soccer ball', 3000, 1, '2023-01-20', 2, 4)
---insert into Sales values('tennis ball', 450, 1, '2023-01-20', 3, 6)
-
-
 --1.)
 --create function MinSaleByEmployee(@name nvarchar(max), 
 --								  @surname nvarchar(max), 
